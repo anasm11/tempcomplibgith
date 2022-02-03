@@ -1,0 +1,72 @@
+:root {
+  --primary-color:darkblue;
+  --secondary-color:lightblue;
+  /* --bkg-clr:linear-gradient(45deg,aqua  0%, rgba(182, 241, 252, 1) 50%, rgba(252, 174, 241, 1) 70%); */
+  --hover-colour:lightgray;
+
+}
+
+/* general for button */
+
+.btn {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* special cases for buttons */
+.primary-btn {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.primary-btn:hover {
+  cursor: pointer;
+}
+
+.secondary-btn {
+  border: 0.1rem solid;
+}
+
+.secondary-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+
+.icon-btn {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.icon-btn:hover {
+  cursor: pointer;
+}
+
+.link:hover {
+  background-color: var(--secondary-color);
+  cursor:pointer;
+}
+
+.floating-btn {
+  background-color: var(--primary-color);
+  color: white;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.5rem;
+  position:fixed;
+  bottom:4rem;
+  right:3rem;
+  z-index:99;
+  box-shadow: 0rem 0rem 1rem 0rem var(--primary-color);
+}
+
+.floating-btn:hover {
+  cursor: pointer;
+}
+
