@@ -1,7 +1,4 @@
-:root {
-  --primary-color:darkblue;
-  --secondary-color:lightblue;
-}
+@import '../general/fonts-colors.css';
 
 .img-responsive{
   max-inline-size: 100%;

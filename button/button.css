@@ -1,10 +1,4 @@
-:root {
-  --primary-color:darkblue;
-  --secondary-color:lightblue;
-  /* --bkg-clr:linear-gradient(45deg,aqua  0%, rgba(182, 241, 252, 1) 50%, rgba(252, 174, 241, 1) 70%); */
-  --hover-colour:lightgray;
-
-}
+@import '../general/fonts-colors.css';
 
 /* general for button */
 

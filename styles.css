@@ -91,3 +91,8 @@ iframe{
     height:auto;
     width:100%;
 }
+
+pre{
+    max-height:300px;
+    overflow:hidden;
+}
