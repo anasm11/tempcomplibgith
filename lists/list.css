@@ -1,5 +1,5 @@
 .list {
-  max-width: fit-content;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -11,6 +11,6 @@
 .list-header {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 4rem;
   margin: 0;
 }
