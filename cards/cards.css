@@ -21,7 +21,7 @@
 
 .card:hover {
   transition: 0.5sec;
-  box-shadow: 2px 2px 2px 2px;
+  box-shadow: 0 0 1rem 0.1rem var(--secondary-color);
 }
 
 .card-body {
