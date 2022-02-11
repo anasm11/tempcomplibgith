@@ -3,6 +3,7 @@
 .card img {
   max-inline-size: 100%;
   block-size: auto;
+  object-fit: cover;
   border-radius: 1rem 1rem 0rem 0rem;
 }
 
@@ -154,8 +155,8 @@
   position: absolute;
   font-size: 0.75rem;
   display: flex;
-  top: 0.3rem;
-  right: 0.3rem;
+  top: 5px;
+  right: 5px;
   justify-content: center;
   align-items: center;
   border-radius: 50%;

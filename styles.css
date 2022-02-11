@@ -1,22 +1,50 @@
 @import "./library.css";
 
 @media (min-width: 750px) {
-  main {
+  /* main {
     max-width: 720px;
-  }
+  } */
 }
 
 body {
-  justify-content: center;
-  position: relative;
+  display:grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin:0;
+  gap:2rem;
+  height:100vh;
 }
 
 header {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  right: 0;
-  left: 0;
+  grid-column:1/-1;
+}
+
+.sidebar {
+  grid-column:1/2;
+  width:fit-content;
+  display: flex;
+  flex-direction:column;
+  justify-self:center;
+}
+
+.sidebar > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: black; 
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  grid-column:2/3;
+  /* padding-top: 6rem; */
+  overflow-y: scroll;
+  /* height:100vh; */
 }
 
 section {
@@ -31,35 +59,6 @@ section {
   gap: 1rem;
 }
 
-.sidebar {
-  position: fixed;
-  top: 6rem;
-  margin: 4rem;
-  height: 80vh;
-  overflow-y: scroll;
-  width: 200px;
-}
-
-.sidebar > * {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex: 1 1 100%;
-  padding: 1rem 3rem;
-  border-radius: 2rem;
-  text-decoration: none;
-  color: black;
-}
-
-.sidebar::-webkit-scrollbar {
-  display: none;
-}
-
-main {
-  padding-left: calc(10rem + 200px);
-  padding-top: 6rem;
-}
-
 footer {
 }
 
@@ -71,8 +70,4 @@ iframe {
 pre {
   max-height: 300px;
   overflow: hidden;
-}
-
-.list-wrapper {
-  width: 200px;
 }
