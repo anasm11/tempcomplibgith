@@ -1,10 +1,11 @@
 @import "../general/fonts-colors.css";
 
+/* general card */
 .card img {
   max-inline-size: 100%;
   block-size: auto;
   object-fit: cover;
-  border-radius: 1rem 1rem 0rem 0rem;
+  border-radius: 1rem 1rem 1rem 1rem;
 }
 
 .card {
@@ -14,7 +15,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: fit-content;
-  max-width: 350px;
+  /* max-width: 350px; */
   height: min-content;
   border-radius: 1rem;
   position: relative;
@@ -37,7 +38,7 @@
   border-radius: 1rem 1rem 0rem 0rem;
 }
 
-.text-container {
+.text-container, .card-header{
   padding: 1rem 1rem 0.2rem 1rem;
   flex: 1 1 auto;
   color: var(--secondary-text-color);
@@ -77,6 +78,7 @@
   display: flex;
   flex: 1 1 auto;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.2rem;
 }
 
@@ -95,16 +97,18 @@
   cursor: pointer;
 }
 
-.basic-textovermedia > .card-body > .figure {
-  position: relative;
-}
-
-.basic-textovermedia > .card-body > .figure > .text-container {
+/* spl cards */
+.basic-textovermedia > .card-body > .figure-with-text > .text-container {
   z-index: 1;
   bottom: 0;
   position: absolute;
   color: white;
 }
+
+.figure-with-text{
+  position: relative;
+}
+
 
 .basic-with-header > .card-body > img {
   border-radius: 0;
@@ -118,14 +122,18 @@
   display: none;
 }
 
+.horizontal > .card-body {
+  display:flex;
+  align-items: flex-start;
+}
+
 .horizontal > .card-body > .img-text > img {
   width: 100px;
   height: 90px;
   flex: 0 1 auto;
-  border-top-right-radius: 0;
 }
 
-.horizontal > .card-body > .img-text {
+.img-text {
   display: flex;
 }
 
@@ -133,7 +141,7 @@
   display: none;
 }
 
-.card .badge {
+.card-badge {
   background-color: var(--primary-color);
   position: absolute;
   font-size: 0.75rem;
@@ -145,10 +153,6 @@
   border-radius: 0.5rem;
   padding: 0.3rem;
   color: white;
-}
-
-.figure-with-badge {
-  position: relative;
 }
 
 .close-btn {
@@ -170,4 +174,21 @@
 
 .box-with-shadow {
   box-shadow: 1px 1px 1px 1px;
+}
+
+.horizontal-card{
+  display: flex;
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+}
+
+.horizontal-card>img{
+  padding:1rem;
+  height:100px;
+  width: 100px;
+}
+
+.horizontal-card>.foot{
+  display:flex;
+  flex-wrap: nowrap;
 }
