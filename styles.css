@@ -79,3 +79,7 @@ pre {
 .card-container{
   max-width:350px;
 }
+
+.slidecontainer{
+  width:250px;
+}

@@ -15,10 +15,10 @@
   align-items: center;
   flex-wrap: wrap;
   width: fit-content;
-  /* max-width: 350px; */
   height: min-content;
   border-radius: 1rem;
   position: relative;
+  overflow: hidden;
 }
 
 .card:hover {
